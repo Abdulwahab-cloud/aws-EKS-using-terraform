@@ -42,7 +42,8 @@ aws eks update-kubeconfig --region <your-region> --name <cluster-name>
   kubectl get nodes
 
 ### 3.install AWS Load Balancer Controller
-- Step 1: Associate IAM OIDC Provider
+- Step 1: Associate IAM OIDC Provider:
+  
   eksctl utils associate-iam-oidc-provider \
   --region <region> \
   --cluster <cluster-name> \
